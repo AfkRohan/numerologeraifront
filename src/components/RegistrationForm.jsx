@@ -11,7 +11,7 @@ import axios from 'axios';
     const handleSubmit = (e) => {
       e.preventDefault();
       // Handle registration logic here
-      axios.post('http://127.0.0.1:8000/api/users', { name, email, dob })
+      axios.post('https://api-for-numerology-reader-jun21-654pm-00s-rohan-shah-beta.platform.beta.sidepro.app/api/users', { name, email, dob })
         .then(response => {
           alert(`Name: ${name}\nEmail: ${email}\nDOB: ${dob}`);
           response.data.prediction && setPrediction(response.data.prediction);
